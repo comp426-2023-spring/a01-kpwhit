@@ -1,0 +1,22 @@
+{
+  "name": "webserver-by-kobes",
+  "version": "1.0.0",
+  "description": "Koby's very first webserver, created for COMP 426",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a01-kpwhit.git"
+  },
+  "author": "kpwhit",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a01-kpwhit/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a01-kpwhit#readme",
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
+}
