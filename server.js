@@ -16,11 +16,11 @@ const port = (args.port || 3000);
 
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
-fs.readFile('./public/index.html', 'utf8', (err, data) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
+try {
+    const data = fs.readFileSync('./public/index.html', 'utf8');
+} catch (error) {
+    console.error(err);
+}
 // Define a const `server` as an arrow function using http.createServer. 
 // Use the documentation for the node.js http module. 
 // The function should have three responses: 
@@ -36,6 +36,5 @@ const server = http.createServer((req, res) => {
 // Put the exact message `Server listening on port ${port}` on the console log. 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`);
-})
 });
 // That's it! You're all done!
