@@ -114,7 +114,7 @@ When you are done with that, your `package.json` file should look something like
 You do have to be careful when you edit it to ensure that the JSON structure remains intact.
 See the guides for links to JSON validators that you can use: https://jsononline.net/json-validator
 
-Read through the `npm` documentation to help you better understand what the `init` process is doing and what `package.json` does for you: https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager
+Read through the `npm` documentation to help you better understand what the `init` process is doing and what `package.json` does for you: https://nodejs.dev/learn/an-introduction-to-the-npm-package-manager
 
 ### Install one dependency
 
@@ -277,7 +277,7 @@ The first thing you need to do is either rename or copy `server.js.example` to `
 
 The resources that you will want to lean on most heavily for this assignment are: 
 
-[Introduction to Node.js](https://nodejs.dev/en/learn) - Node.js
+[Introduction to Node.js](https://nodejs.dev/learn) - Node.js
 
 [JavaScript Tutorial](https://www.w3schools.com/js/) - w3 schools
 
@@ -293,11 +293,11 @@ We're going to fancy it up a bit, but this is the main event.
 
 Everything you need to know to be able to do that is here: 
 
-https://nodejs.dev/en/learn/#an-example-nodejs-application
+https://nodejs.dev/learn/build-an-http-server
 
 More granular documentation of the `http` module is available here:
 
-https://nodejs.dev/en/api/v18/http/
+https://nodejs.dev/learn/the-nodejs-http-module
 
 So, start with that.
 
@@ -311,7 +311,7 @@ Instead, you are going to read in `./public/index.html` and put that inside `res
 
 Everything you need to be able to do that is available here:
 
-https://nodejs.dev/en/learn/reading-files-with-nodejs
+https://nodejs.dev/learn/reading-files-with-nodejs
 
 You can use either method available in that example, BTW.
 They do different things, but the end result is the same.
@@ -320,15 +320,7 @@ They do different things, but the end result is the same.
 
 Read the following to better understand what the `fs` module does, beyond just reading files:
 
-(Everything under the "Manipulating Files" header in the navigation in https://nodejs.dev/learn)
-
-- https://nodejs.dev/en/learn/nodejs-file-stats/
-- https://nodejs.dev/en/learn/nodejs-file-paths/
-- https://nodejs.dev/en/learn/working-with-file-descriptors-in-nodejs/
-- https://nodejs.dev/en/learn/reading-files-with-nodejs/
-- https://nodejs.dev/en/learn/writing-files-with-nodejs/
-- https://nodejs.dev/en/learn/working-with-folders-in-nodejs/
-- https://nodejs.dev/en/api/v18/fs/
+https://nodejs.dev/learn/the-nodejs-fs-module
 
 #### Error handling
 
@@ -343,7 +335,7 @@ Pay special attention to the error handling that is happening in the examples on
 
 Look here for a deeper understanding of dealing with errors:
 
-https://nodejs.dev/en/api/v18/errors/
+https://nodejs.dev/learn/error-handling-in-nodejs
 
 #### The minimist module
 
@@ -353,9 +345,7 @@ There are multiple ways to do this, but we are going to use the `minimist` modul
 
 Everything that you need to be able to do that is here:
 
-- https://nodejs.dev/en/learn/run-nodejs-scripts-from-the-command-line/ (Read this entire section.)
-- https://www.npmjs.com/package/minimist
-- https://github.com/minimistjs/minimist
+https://nodejs.dev/learn/nodejs-accept-arguments-from-the-command-line
 
 > **HINT:** You will need to use `args.port` from your `args` const in order to define a `port` const, but use a logical OR operator `||` to give it the option of defaulting to port 3000 in the case that a port number is not supplied when we run the script. 
 You can use the example that is provided in the link above to figure out how to do this.
