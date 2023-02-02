@@ -8,7 +8,7 @@ try {
     const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
-        res.end('test');
+        res.end(data);
     });
     server.listen(port);
 } catch (err) {
