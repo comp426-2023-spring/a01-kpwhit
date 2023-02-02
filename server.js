@@ -5,7 +5,6 @@ var args = min(process.argv.slice(2));
 const port = (args.port || 3000);
 try {
     const data = fs.readFileSync('./public/index.html', 'utf8');
-    console.log(data);
     const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
